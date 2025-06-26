@@ -33,9 +33,9 @@ public class Ex3 {
 
         Set<String> maisQue30 = new HashSet<>();
 
-        for (Map.Entry<String, Integer> idade : pessoa.entrySet()){
-            if(idade.getValue() > 30){
-                maisQue30.add(idade.getKey());
+        for (Map.Entry<String, Integer> elemento : pessoa.entrySet()){
+            if(elemento.getValue() > 30){
+                maisQue30.add(elemento.getKey());
             }
         }
         System.out.println("Pessoas com mais de 30: " +maisQue30);
