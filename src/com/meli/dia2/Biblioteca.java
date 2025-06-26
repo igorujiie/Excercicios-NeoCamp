@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Biblioteca {
-    ArrayList<Livro> livros = new ArrayList<>();
+    ArrayList<Item> livros = new ArrayList<>();
 
     public Biblioteca(){
         livros = new ArrayList<>();
@@ -63,7 +63,7 @@ public class Biblioteca {
             System.out.println("Nenhum livro encontrado");
         }
         else{
-            for(Livro livro : livros){
+            for(Item livro : livros){
                 livro.exibirDetalhes();
             }
         }
@@ -72,9 +72,9 @@ public class Biblioteca {
 
     public void buscarLivroPorTitulo(String titulo){
         boolean existe = false;
-        for(Livro livro : livros){
-            if(livro.getTitulo().equals(titulo)){
-                livro.exibirDetalhes();
+        for(Item item : livros){
+            if(item.getTitulo().equals(titulo)){
+                item.exibirDetalhes();
                 existe = true;
             }
         }
